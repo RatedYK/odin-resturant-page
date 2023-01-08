@@ -6,7 +6,7 @@ export default function loadMenu() {
     
 
     //make a <br> so that the starter can be seen and not hidden by the banner
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 20; i++) {
         main.appendChild(document.createElement('br'));
     }
 

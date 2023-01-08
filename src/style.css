@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -52,7 +53,6 @@
     color: white;
     gap: 3rem;
     overflow: scroll;
-    padding-top: 20rem;
 
 }
 
@@ -66,11 +66,55 @@
     margin: 0.5rem;
 }
 
+.info {
+    list-style: none;
+    font-size: large;
+}
+
 ul > span {
     font-size: smaller;
     font-style: italic;
 }
 
+#contactContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'address hours'
+                         'map contact';
+    gap: 1rem;
+}
+
+.address {
+    grid-area: address;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: x-large;
+}
+
+.map {
+    display: none;
+    height: 20rem;
+    width: 20rem;
+}
+
+.hours {
+    grid-area: hours;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 
 #footer {

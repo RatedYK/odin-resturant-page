@@ -11,7 +11,7 @@ export default function loadMenu() {
     }
 
     //construct starter menu
-    starterMenu.innerHTML = 'A La Carte';
+    starterMenu.innerHTML = "Hors d'oeuvre";
     const starterItems = ['Asparagus wrapped proscuiito', 'Full cheese platter'];
     const starterItemDescriptions = ['fresh organic asparagus, proscuitto smoked in the green hills of italy',
                                     '7 varieties of cheeses from blue, gouda, cheddar, mozerella, camembert, feta and goat'];
@@ -75,7 +75,10 @@ export default function loadMenu() {
     main.appendChild(dessertList);
 
 
-
+ //make a <br> so that the end has some space before footer
+ for (let i = 0; i < 1; i++) {
+    main.appendChild(document.createElement('br'));
+}
 
 
 }

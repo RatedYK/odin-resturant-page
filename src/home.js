@@ -1,3 +1,5 @@
+import loadMenu from "./menu";
+
 export default function loadHome() {
     const main = document.querySelector('#main')
     const title = document.createElement('h1');
@@ -11,6 +13,7 @@ export default function loadHome() {
     title.innerHTML = "Chu's";
     description.innerHTML = "An fine dining experience at the comfort of your own home";
     btn.innerHTML = "See Menu";
+    btn.addEventListener('click', loadMenu)
 
     main.appendChild(title);
     main.appendChild(description);
